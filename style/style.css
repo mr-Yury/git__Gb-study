@@ -11,33 +11,24 @@ body {
         padding-left: 32px;
         padding-right: 32px;
     }
+
     .header-wrap, .footer-wrap {
         padding-left: 32px;
         padding-right: 32px;
     }
-}
 
-/* HEADER-END */
-
-/* PROMO-START */
-
-@media (min-width: 768px){
     .promo-wrap {
         display: flex;
     }
-    .promo-wrap > div {
+
+    .promo-wrap>div {
         width: 50%;
     }
+
     .promo-left {
         display: block;
     }
 }
-
-@media (min-width: 1600px) {
-}
-/* PROMO-END */
-
-/********** @media-end **********/
 
 /* HEADER */
 
@@ -53,49 +44,51 @@ body {
     box-sizing: border-box;
 }
 
-.header-wrap {
+.header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-col-1 {
+.header__col-1 {
     display: flex;
     align-items: center;
 }
 
-.logo-link {
+.header__link {
     text-decoration: none;
     color: transparent;
-    margin-right: 41px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.search-btn, .menu-btn {
+.header__button {
     background-color: transparent;
     border: none;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.registration, .cart-link {
+.header__link_disabled {
     display: none;
 }
 
 @media (min-width: 768px) {
-    .registration,
-    .cart-link {
+    .header__link_disabled {
         display: inline;
     }
-    
+
 }
 
 .registration {
     margin: 0 33px;
 }
 
-.cart-badge {
+.header__badge {
     position: relative;
 }
 
-.cart-badge span{
+.header__badge span {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -112,65 +105,76 @@ body {
 
 /* PROMO */
 
-.promo-wrap {
+.promo {
     background-color: #f1e4e6;
-    min-height: 368px;
-    max-width: 1600px;
 }
 
-.promo-left {
+.promo__content {
+    min-height: 368px;
+}
+
+.promo__content-left {
     display: none;
 }
 
 @media (min-width: 768px) {
-    .promo-left {
+    .promo__content {
+        display: flex;
+    }
+
+    .promo__content>div {
+        width: 50%;
+    }
+
+    .promo__content-left {
         display: block;
     }
 }
 
-.promo-left img {
+.promo__content-left img {
     width: 100%;
+    display: block;
 }
 
-.promo-right {
+.promo__content-right {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: inherit;
 }
 
-.promo-title {
+.promo__title {
     border-left: 12px solid #F16D7F;
     padding-left: 15px;
     height: 61px;
 }
 
-.brand1st {
+.promo__title-str-1 {
     font-size: 38px;
     font-weight: 900;
     line-height: 36px;
 }
 
-.brand2nd {
+.promo__title-str-2 {
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
 }
 
-.brand2nd span {
+.promo__title_coloraccent {
     color: #F16D7F;
 }
 
 /* CATEGORY */
-.category {
+.category__content {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 247px) 111px;
     row-gap: 32px;
-    padding: 64px 0px;
+    padding: 64px 16px;
 }
 
-.category-title {
+.category__title {
     position: relative;
     z-index: 1;
     color: #fff;
@@ -183,7 +187,7 @@ body {
     font-size: 16px;
 }
 
-.category > div {
+.category__content>div {
     position: relative;
 }
 
@@ -196,7 +200,7 @@ body {
     top: 0;
 }
 
-.cat-t2 {
+.category__title-str2 {
     font-size: 24px;
     line-height: 29px;
     text-align: center;
@@ -205,18 +209,148 @@ body {
 }
 
 @media (min-width: 768px) {
-    .category {
+    .category__content {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 167px 116px;
         gap: 20px;
     }
-    .accesories {
+
+    .category__accesories {
         grid-column: 1/-1;
     }
 }
 
+.products {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 96px;
+}
+
+.products__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .products__card {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 18px;
+        column-gap: 16px;
+    }
+}
+
+@media (min-width: 1140px) {
+    .products__card {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }   
+}
+
+.products__title-str1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.products__title-str2 {
+    text-align: center;
+    color: #9f9f9f;
+    margin-bottom: 64px;
+}
+
+.products__more-products_button {
+    border: 1px solid #ff6a6a;
+    margin-top: 40px;
+    padding: 15px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: none;
+    color: #f26376;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.products__more-products_button:hover {
+    color: white;
+    background: #ff6a6a;
+}
+
+.card {
+    background: #f8f8f8;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card:hover .card__hover {
+    display: flex;
+}
+
+.card__hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(58, 56, 56, 0.86);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__hover button img {
+    width: 26px;
+    height: 24px;
+    margin-right: 11px;
+}
+
+.card__hover button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.card__photo {
+    position: relative;
+}
+
+.card__text {
+    padding: 16px 25px 29px 20px;
+}
+
+.card__text-title {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000;
+}
+
+.card__text-descripton {
+    font-size: 14px;
+    line-height: 17px;
+    color: #5d5d5d;
+    padding: 13px 0px 18px
+}
+
+.card__text-price {
+    font-size: 16px;
+    line-height: 19px;
+    color:#F16D7F;
+}
+
 .subscribe {
-    background-image: url(../img/subscribe.jpg); /* по стандартной схеме путь не работает о.О */
+    background-image: url(../img/subscribe.jpg);
+    /* по стандартной схеме путь не работает о.О */
     background-size: cover;
     color: #222;
     padding-top: 64px;
@@ -232,12 +366,14 @@ body {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .subscribe .s-wrap {
         margin: 0 auto;
         width: 1140px;
         display: flex;
         justify-content: space-between;
     }
+
     .sub-left {
         width: 359px;
     }

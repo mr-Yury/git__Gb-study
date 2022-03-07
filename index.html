@@ -16,24 +16,24 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="wrap header-wrap">
-            <div class="header-col-1">
-                <a href="index.html" class="logo-link">
+        <div class="wrap header__content">
+            <div class="header__col-1">
+                <a href="index.html" class="header__link">
                     <img src="img/logo.svg" alt="logo">
                 </a>
-                <button class="search-btn">
+                <button class="header__button">
                     <img src="img/search.svg" alt="search">
                 </button>
             </div>
-            <div class="header-col-2">
-                <button class="menu-btn">
+            <div class="header__col-2">
+                <button class="header__button">
                     <img src="img/menu.svg" alt="menu">
                 </button>
-                <a href="login.html" class="registration">
+                <a href="login.html" class="header__link header__link_disabled">
                     <img src="img/loginpic.svg" alt="login">
                 </a>
-                <a href="cart.html" class="cart-link">
-                    <span class="cart-badge">
+                <a href="cart.html" class="header__link header__link_disabled">
+                    <span class="header__badge">
                         <img src="img/cart.svg" alt="cart">
                         <span>5</span>
                     </span>
@@ -42,148 +42,169 @@
         </div>
     </header>
     <!-- PROMO -->
-    <div class="wrap promo-wrap">
-        <div class="promo-left">
-            <img src="img/promo-pic.png" alt="promo-img">
-        </div>
-        <div class="promo-right">
-            <div class="promo-title">
-                <div class="brand1st">THE BRAND</div>
-                <div class="brand2nd">OF LUXERIOUS <span class="promo-title-color">FASHION</span></div>
+    <div class="promo">
+        <div class="wrap promo__content">
+            <div class="promo__content-left">
+                <img src="img/promo-pic.png" alt="promo-img">
+            </div>
+            <div class="promo__content-right">
+                <div class="promo__title">
+                    <div class="promo__title-str-1">THE BRAND</div>
+                    <div class="promo__title-str-2">OF LUXERIOUS <span class="promo__title_coloraccent">FASHION</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- CATEGORY -->
-    <div class="wrap category">
-        <div class="women">
-            <div class="category-title">
-                <div class="cat-t1">30% OFF</div>
-                <div class="cat-t2">FOR WOMEN</div>
+    <div class="category">
+        <div class="wrap category__content">
+            <div class="category__women">
+                <div class="category__title">
+                    <div class="category__title-str1">30% OFF</div>
+                    <div class="category__title-str2">FOR WOMEN</div>
+                </div>
+                <img class="category-img" src="img/women.jpg" alt="30% off for women">
             </div>
-            <img class="category-img" src="img/women.jpg" alt="30% off for women">
-        </div>
-        <div class="men">
-            <div class="category-title">
-                <div class="cat-t1">HOT DEAL</div>
-                <div class="cat-t2">FOR MEN</div>
+            <div class="category__men">
+                <div class="category__title">
+                    <div class="category__title-str1">HOT DEAL</div>
+                    <div class="category__title-str2">FOR MEN</div>
+                </div>
+                <img src="img/men.jpg" alt="Hot deal for men">
             </div>
-            <img src="img/men.jpg" alt="Hot deal for men">
-        </div>
-        <div class="kids">
-            <div class="category-title">
-                <div class="cat-t1">NEW ARRIVALS</div>
-                <div class="cat-t2">FOR KIDS</div>
+            <div class="category__kids">
+                <div class="category__title">
+                    <div class="category__title-str1">NEW ARRIVALS</div>
+                    <div class="category__title-str2">FOR KIDS</div>
+                </div>
+                <img src="img/kids.jpg" alt="New arrivals for kids">
             </div>
-            <img src="img/kids.jpg" alt="New arrivals for kids">
-        </div>
-        <div class="accesories">
-            <div class="category-title">
-                <div class="cat-t1">LUXIROUS & TRENDY</div>
-                <div class="cat-t2">ACCESORIES</div>
+            <div class="category__accesories">
+                <div class="category__title">
+                    <div class="category__title-str1">LUXIROUS & TRENDY</div>
+                    <div class="category__title-str2">ACCESORIES</div>
+                </div>
+                <img src="img/accesories.jpg" alt="Lux accesories">
             </div>
-            <img src="img/accesories.jpg" alt="Lux accesories">
         </div>
     </div>
     <!-- PRODUCTS -->
     <div class="wrap products">
-        <div class="products-title">
-            <div class="p-title">Fetured Items</div>
-            <div class="p-desc">Shop for items based on what we featured in this week</div>
+        <div class="products__title">
+            <div class="products__title-str1">Fetured Items</div>
+            <div class="products__title-str2">Shop for items based on what we featured in this week</div>
         </div>
-        <div class="card-wrap">
+        <div class="products__card">
             <div class="card">
-                <div class="item-photo">
+                <div class="card__photo">
                     <img src="img/card-1.png" alt="card-1">
-                    <div class="card-hover">
+                    <div class="card__hover">
                         <button>
                             <img src="img/cart.svg">
+                            Add to Cart
                         </button>
                     </div>
                 </div>
-                <div class="card-desc">
-                    <div class="prod-name">ELLERY X M'O CAPSULE</div>
-                    <div class="prod-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                <div class="card__text">
+                    <div class="card__text-title">ELLERY X M'O CAPSULE</div>
+                    <div class="card__text-descripton">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym Ellery teams up with Moda Operandi.</div>
-                    <div class="prod-price">$52.00</div>
+                    <div class="card__text-price">$52.00</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__photo">
+                    <img src="img/card-2.png" alt="card-2">
+                    <div class="card__hover">
+                        <button>
+                            <img src="img/cart.svg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="card__text">
+                    <div class="card__text-title">ELLERY X M'O CAPSULE</div>
+                    <div class="card__text-descripton">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of cool Kym Ellery teams up with Moda Operandi.</div>
+                    <div class="card__text-price">$52.00</div>
                 </div>
             </div>
             <div class="card">
                 <div class="item-photo">
-                    <img src="img/card-2.png" alt="card-1">
+                    <img src="img/card-3.png" alt="card-3">
+                    <div class="card__hover">
+                        <button>
+                            <img src="img/cart.svg">
+                            Add to Cart
+                        </button>
+                    </div>
                 </div>
-                <div class="card-desc">
-                    <div class="prod-name">ELLERY X M'O CAPSULE</div>
-                    <div class="prod-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                <div class="card__text">
+                    <div class="card__text-title">ELLERY X M'O CAPSULE</div>
+                    <div class="card__text-descripton">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym Ellery teams up with Moda Operandi.</div>
-                    <div class="prod-price">$52.00</div>
+                    <div class="card__text-price">$52.00</div>
                 </div>
             </div>
             <div class="card">
                 <div class="item-photo">
-                    <img src="img/card-3.png" alt="card-1">
-                    <div class="card-hover">
+                    <img src="img/card-4.png" alt="card-4">
+                    <div class="card__hover">
                         <button>
                             <img src="img/cart.svg">
+                            Add to Cart
                         </button>
                     </div>
                 </div>
-                <div class="card-desc">
-                    <div class="prod-name">ELLERY X M'O CAPSULE</div>
-                    <div class="prod-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                <div class="card__text">
+                    <div class="card__text-title">ELLERY X M'O CAPSULE</div>
+                    <div class="card__text-descripton">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym Ellery teams up with Moda Operandi.</div>
-                    <div class="prod-price">$52.00</div>
+                    <div class="card__text-price">$52.00</div>
                 </div>
             </div>
             <div class="card">
                 <div class="item-photo">
-                    <img src="img/card-4.png" alt="card-1">
-                    <div class="card-hover">
+                    <img src="img/card-5.png" alt="card-5">
+                    <div class="card__hover">
                         <button>
                             <img src="img/cart.svg">
+                            Add to Cart
                         </button>
                     </div>
                 </div>
-                <div class="card-desc">
-                    <div class="prod-name">ELLERY X M'O CAPSULE</div>
-                    <div class="prod-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                <div class="card__text">
+                    <div class="card__text-title">ELLERY X M'O CAPSULE</div>
+                    <div class="card__text-descripton">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym Ellery teams up with Moda Operandi.</div>
-                    <div class="prod-price">$52.00</div>
+                    <div class="card__text-price">$52.00</div>
                 </div>
             </div>
             <div class="card">
                 <div class="item-photo">
-                    <img src="img/card-5.png" alt="card-1">
-                    <div class="card-hover">
+                    <img src="img/card-6.png" alt="card-6">
+                    <div class="card__hover">
                         <button>
                             <img src="img/cart.svg">
+                            Add to Cart
                         </button>
                     </div>
                 </div>
-                <div class="card-desc">
-                    <div class="prod-name">ELLERY X M'O CAPSULE</div>
-                    <div class="prod-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                <div class="card__text">
+                    <div class="card__text-title">ELLERY X M'O CAPSULE</div>
+                    <div class="card__text-descripton">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of cool Kym Ellery teams up with Moda Operandi.</div>
-                    <div class="prod-price">$52.00</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="item-photo">
-                    <img src="img/card-6.png" alt="card-1">
-                    <div class="card-hover">
-                        <button>
-                            <img src="img/cart.svg">
-                        </button>
-                    </div>
-                </div>
-                <div class="card-desc">
-                    <div class="prod-name">ELLERY X M'O CAPSULE</div>
-                    <div class="prod-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of cool Kym Ellery teams up with Moda Operandi.</div>
-                    <div class="prod-price">$52.00</div>
+                    <div class="card__text-price">$52.00</div>
                 </div>
             </div>
         </div>
-        <button class="more-prod-btn">Browse All Product</button>
+        <button class="products__more-products_button">Browse All Product</button>
+    </div>
+    <div class="features">
+        <div class="wrap features__content">
+            
+        </div>
     </div>
 </body>
 
