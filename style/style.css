@@ -3,9 +3,6 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/********** @media-start **********/
-/* HEDAER-START */
-
 @media (min-width: 768px) {
     .header {
         padding-left: 32px;
@@ -29,8 +26,6 @@ body {
         display: block;
     }
 }
-
-/* HEADER */
 
 .wrap {
     margin: 0 auto;
@@ -238,13 +233,9 @@ body {
         row-gap: 18px;
         column-gap: 16px;
     }
-}
-
-@media (min-width: 1140px) {
-    .products__card {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }   
+    .products {
+        margin-bottom: 64px;
+    }
 }
 
 .products__title-str1 {
@@ -348,6 +339,42 @@ body {
     color:#F16D7F;
 }
 
+.features {
+    background-color: #222;
+    padding-top: 48px;
+    padding-bottom: 81px;
+}
+
+.features__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    width: 360px;
+}
+
+.features__content img {
+    padding-bottom: 28px;
+}
+
+.features__item_title, .features__item_description {
+    color: #f8f8f8;
+}
+
+.features__item_title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 14px;
+}
+
+.features__item_description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+}
+
 .subscribe {
     background-image: url(../img/subscribe.jpg);
     /* по стандартной схеме путь не работает о.О */
@@ -360,6 +387,16 @@ body {
 }
 
 @media (min-width: 1140px) {
+    .products__card {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }  
+
+    .features__content {
+        flex-direction: row;
+        width: 1140px;
+    }
+
     .subscribe {
         padding-top: 97px;
         padding-bottom: 126px;
@@ -367,58 +404,72 @@ body {
         padding-right: 20px;
     }
 
-    .subscribe .s-wrap {
+    .subscribe .subscribe__content {
         margin: 0 auto;
         width: 1140px;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 
-    .sub-left {
+    .subscribe__content_left {
         width: 359px;
+    }
+    
+    .subscribe__content_right {
+        width: 557px;
     }
 }
 
-.s-wrap-in {
+.subscribe__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe__content_left {
+    width: 343px;
+    padding-bottom: 65px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sub-left {
-    padding-bottom: 65px;
-}
-
-.sub-left img {
+.subscribe__content_left img {
     padding-bottom: 30px;
 }
 
-.sub-desc {
+.subscribe__content_right {
+    width: 343px;
+}
+
+.subscribe__content_description {
     text-align: center;
     font-size: 18px;
     line-height: 22px;
 }
 
-.form-title {
+.subscribe__content_formTitle {
     font-size: 24px;
     font-weight: bold;
     line-height: 37px;
 }
 
-.form-desc {
+.subscribe__content_formDescription {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     padding-bottom: 22px;
 }
 
-.sub-form {
+.subscribe__form {
     height: 47px;
 }
 
-.sub-form input {
+.subscribe__form input {
     height: inherit;
-    width: 235px;
+    width: 247px;
     border: none;
     background: #e1e1e1;
     padding: 21px 6px;
@@ -437,9 +488,9 @@ body {
     font-weight: 400;
 }
 
-.sub-form button {
+.subscribe__form button {
     height: inherit;
-    width: 100px;
+    width: 96px;
     border: none;
     color: #fff;
     font-family: inherit;
@@ -447,23 +498,58 @@ body {
     line-height: 17px;
     background: #F16D7F;
     border-radius: 0 30px 30px 0;
-    padding: 0 20px;
 }
 
-.footer-wrap {
+.footer__content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
     align-items: center;
 }
 
-.footer {
+.footer__content_left p {
+    color: #fbfbfb;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.footer__content_right {
+    display: flex;
+    gap: 8px;
+    padding-top: 42px;
+    padding-bottom: 40px;
+}
+
+.footer__content a {
+    color: #000;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer {
     color: #fff;
     background-color: #222;
-    height: 80px;
-    padding: 18px 16px;
     box-sizing: border-box;
 }
 
+.footer__content a:hover {
+    color: white;
+    background: #F16D7F;
+}
+@media (min-width: 768px) {
+    .footer__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
 
 /* REGISTRATION */
 .reg-title {
