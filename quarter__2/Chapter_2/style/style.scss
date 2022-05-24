@@ -32,7 +32,8 @@ body {
     width: 360px;
     margin: 18px 18px;
     display: flex;
-    
+    justify-content: space-between;
+
     img {
         width: 360px;
         display: block;
@@ -60,6 +61,7 @@ body {
     }
 
     &__text-price {
+        padding-top: 16px;
         font-size: 16px;
         line-height: 19px;
         color: #f16d7f;
